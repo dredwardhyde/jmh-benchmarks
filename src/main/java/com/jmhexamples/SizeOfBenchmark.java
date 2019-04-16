@@ -49,6 +49,7 @@ public class SizeOfBenchmark {
         new Runner(opt).run();
     }
 
+    // not working for array objects / gives different result from Java agent
     private static long sizeOfUnsafe(Object object) {
         Class<?> clazz = object.getClass();
         long maximumOffset = 0;
