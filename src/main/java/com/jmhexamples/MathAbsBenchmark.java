@@ -2,6 +2,9 @@ package com.jmhexamples;
 
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
+import org.openjdk.jmh.runner.Runner;
+import org.openjdk.jmh.runner.options.Options;
+import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
@@ -91,6 +94,14 @@ public class MathAbsBenchmark {
 
     private static int absCustom(int i) {
         return (i >>> 31 == 1) ? ~i + 1 : i;
+    }
+
+    public static void main(String[] args) throws Exception {
+        Options opt = new OptionsBuilder()
+                .include(MathAbsBenchmark.class.getSimpleName())
+                .forks(1)
+                .build();
+        new Runner(opt).run();
     }
 
     @Benchmark

@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SizeOfBenchmark" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="com.jmhexamples.SizeOfBenchmark" />
+    <module name="benchmarks" />
+    <option name="VM_PARAMETERS" value="-javaagent:$PROJECT_DIR$/unnamed.jar" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.jmhexamples.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
