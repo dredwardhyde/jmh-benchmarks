@@ -34,17 +34,29 @@ public class ReflectionVsDirectInvocationBenchmark {
 
     /*
         # JMH version: 1.21
-        # VM version: JDK 11.0.3, Java HotSpot(TM) 64-Bit Server VM, 11.0.3+12-LTS
+        # VM version: JDK 12.0.1-internal, OpenJDK 64-Bit Server VM, 12.0.1-internal+0-adhoc.edwardhyde.jdk12u
 
-        # Method is known at compile-time or some preparations were made
-        ReflectionVsDirectInvocationBenchmark.testMethodDirect                  avgt    5    9.404 ± 0.055  ns/op
-        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandleBind        avgt    5   11.074 ± 0.067  ns/op
-        ReflectionVsDirectInvocationBenchmark.testMethodPartialReflection       avgt    5   14.772 ± 0.050  ns/op
+        Benchmark                                                               Mode  Cnt    Score   Error  Units
+        ReflectionVsDirectInvocationBenchmark.testMethodDeclaredFullReflection  avgt    5  101.244 ± 2.617  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodDirect                  avgt    5    8.217 ± 0.032  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodFullReflection          avgt    5   96.477 ± 0.264  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandle            avgt    5  832.951 ± 1.711  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandleBind        avgt    5   11.001 ± 0.334  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodPartialReflection       avgt    5   12.327 ± 0.060  ns/op
 
-        # Method is determined at runtime
-        ReflectionVsDirectInvocationBenchmark.testMethodFullReflection          avgt    5  111.641 ± 9.978  ns/op
-        ReflectionVsDirectInvocationBenchmark.testMethodDeclaredFullReflection  avgt    5  117.025 ± 0.660  ns/op
-        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandle            avgt    5  896.651 ± 7.286  ns/op
+        # JMH version: 1.21
+        # VM version: JDK 12.0.2-internal, Eclipse OpenJ9 VM, master-5dd23af84
+        Eclipse OpenJ9 OpenJDK 64-bit Server VM (12.0.2-internal+0-adhoc.edwardhyde.openj9-openjdk-jdk12)
+        from bsd-x86_64 JRE with Extensions for OpenJDK for Eclipse OpenJ9 HEAD, built on Aug  8 2019 19:13:29
+        by edwardhyde with Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+
+        Benchmark                                                               Mode  Cnt    Score    Error  Units
+        ReflectionVsDirectInvocationBenchmark.testMethodDeclaredFullReflection  avgt    5  380.213 ± 10.493  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodDirect                  avgt    5    7.832 ±  0.032  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodFullReflection          avgt    5  343.269 ±  2.965  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandle            avgt    5  264.036 ±  8.097  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandleBind        avgt    5    9.533 ±  0.356  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodPartialReflection       avgt    5  146.070 ± 54.628  ns/op
      */
     public static void main(String[] args) throws Exception {
         Options opt = new OptionsBuilder()
