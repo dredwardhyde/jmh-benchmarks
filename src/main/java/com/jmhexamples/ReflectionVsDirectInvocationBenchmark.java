@@ -57,6 +57,18 @@ public class ReflectionVsDirectInvocationBenchmark {
         ReflectionVsDirectInvocationBenchmark.testMethodMethodHandle            avgt    5  264.036 ±  8.097  ns/op
         ReflectionVsDirectInvocationBenchmark.testMethodMethodHandleBind        avgt    5    9.533 ±  0.356  ns/op
         ReflectionVsDirectInvocationBenchmark.testMethodPartialReflection       avgt    5  146.070 ± 54.628  ns/op
+
+        # JMH version: 1.21
+        # VM version: JDK 12.0.2-internal, Eclipse OpenJ9 VM, master-5dd23af84
+        # VM options: -Xshareclasses -Xaggressive
+
+        Benchmark                                                               Mode  Cnt    Score    Error  Units
+        ReflectionVsDirectInvocationBenchmark.testMethodDeclaredFullReflection  avgt    5  328.750 ± 10.925  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodDirect                  avgt    5    7.991 ±  0.028  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodFullReflection          avgt    5  337.580 ±  6.944  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandle            avgt    5  274.214 ±  4.197  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandleBind        avgt    5    9.738 ±  0.293  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodPartialReflection       avgt    5  141.923 ± 36.041  ns/op
      */
     public static void main(String[] args) throws Exception {
         Options opt = new OptionsBuilder()

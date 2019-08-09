@@ -32,13 +32,12 @@ public class SizeOfBenchmark {
 
     /*
         # JMH version: 1.21
-        # VM version: JDK 11.0.3, Java HotSpot(TM) 64-Bit Server VM, 11.0.3+12-LTS
-        # VM invoker: /Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home/bin/java
+        # VM version: JDK 12.0.1-internal, OpenJDK 64-Bit Server VM, 12.0.1-internal+0-adhoc.edwardhyde.jdk12u
         # VM options: -javaagent:/Users/edwardhyde/Documents/Development/jmh-examples/benchmarks/unnamed.jar
 
-        Benchmark                         Mode  Cnt     Score    Error  Units
-        SizeOfBenchmark.testMethodAgent   avgt    5   150.296 ±  1.917  ns/op
-        SizeOfBenchmark.testMethodUnsafe  avgt    5  1506.934 ± 11.407  ns/op
+        Benchmark                         Mode  Cnt     Score   Error  Units
+        SizeOfBenchmark.testMethodAgent   avgt    5   114.608 ± 2.342  ns/op
+        SizeOfBenchmark.testMethodUnsafe  avgt    5  1315.649 ± 1.887  ns/op
      */
     public static void main(String[] args) throws Exception {
         Options opt = new OptionsBuilder()

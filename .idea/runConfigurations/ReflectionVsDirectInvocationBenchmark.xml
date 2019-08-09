@@ -1,7 +1,10 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="ReflectionVsDirectInvocationBenchmark" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="ALTERNATIVE_JRE_PATH" value="12-openj9" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <option name="MAIN_CLASS_NAME" value="com.jmhexamples.ReflectionVsDirectInvocationBenchmark" />
     <module name="benchmarks" />
+    <option name="VM_PARAMETERS" value="-Xshareclasses -Xaggressive" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.jmhexamples.*" />
