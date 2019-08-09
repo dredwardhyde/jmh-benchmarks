@@ -33,6 +33,9 @@ public class ReflectionVsDirectInvocationBenchmark {
     }
 
     /*
+
+        -------------------------------------------JDK 12--------------------------------------------------------
+
         # JMH version: 1.21
         # VM version: JDK 12.0.1-internal, OpenJDK 64-Bit Server VM, 12.0.1-internal+0-adhoc.edwardhyde.jdk12u
 
@@ -110,6 +113,44 @@ public class ReflectionVsDirectInvocationBenchmark {
         ReflectionVsDirectInvocationBenchmark.testMethodMethodHandle            avgt    5  325.031 ±  3.315  ns/op
         ReflectionVsDirectInvocationBenchmark.testMethodMethodHandleBind        avgt    5   11.400 ±  0.432  ns/op
         ReflectionVsDirectInvocationBenchmark.testMethodPartialReflection       avgt    5  167.134 ± 48.873  ns/op
+
+
+        -------------------------------------------JDK 8----------------------------------------------------------
+
+        # JMH version: 1.21
+        # VM version: JDK 1.8.0_222, OpenJDK 64-Bit GraalVM CE 19.1.1, 25.222-b08-jvmci-19.1-b01
+
+        Benchmark                                                               Mode  Cnt    Score    Error  Units
+        ReflectionVsDirectInvocationBenchmark.testMethodDeclaredFullReflection  avgt    5  401.587 ± 49.821  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodDirect                  avgt    5   11.766 ±  0.022  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodFullReflection          avgt    5  173.754 ±  1.749  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandle            avgt    5  845.309 ±  6.114  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandleBind        avgt    5   12.038 ±  0.049  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodPartialReflection       avgt    5   13.145 ±  0.051  ns/op
+
+
+        # JMH version: 1.21
+        # VM version: JDK 1.8.0_222, OpenJDK 64-Bit Server VM, 25.222-b10
+
+        Benchmark                                                               Mode  Cnt    Score   Error  Units
+        ReflectionVsDirectInvocationBenchmark.testMethodDeclaredFullReflection  avgt    5  342.100 ± 7.047  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodDirect                  avgt    5    9.907 ± 0.052  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodFullReflection          avgt    5  147.142 ± 1.862  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandle            avgt    5  637.023 ± 4.955  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandleBind        avgt    5   13.423 ± 1.261  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodPartialReflection       avgt    5   12.085 ± 0.654  ns/op
+
+
+        # JMH version: 1.21
+        # VM version: JDK 1.8.0_222, Eclipse OpenJ9 VM, openj9-0.15.1
+
+        Benchmark                                                               Mode  Cnt   Score   Error  Units
+        ReflectionVsDirectInvocationBenchmark.testMethodDeclaredFullReflection  avgt    5  74.017 ± 8.299  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodDirect                  avgt    5   9.384 ± 0.017  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodFullReflection          avgt    5  68.772 ± 8.543  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandle            avgt    5  88.150 ± 1.486  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandleBind        avgt    5  12.839 ± 0.059  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodPartialReflection       avgt    5  14.794 ± 1.407  ns/op
      */
     public static void main(String[] args) throws Exception {
         Options opt = new OptionsBuilder()
