@@ -69,6 +69,47 @@ public class ReflectionVsDirectInvocationBenchmark {
         ReflectionVsDirectInvocationBenchmark.testMethodMethodHandle            avgt    5  274.214 ±  4.197  ns/op
         ReflectionVsDirectInvocationBenchmark.testMethodMethodHandleBind        avgt    5    9.738 ±  0.293  ns/op
         ReflectionVsDirectInvocationBenchmark.testMethodPartialReflection       avgt    5  141.923 ± 36.041  ns/op
+
+        # JMH version: 1.21
+        # VM version: JDK 12.0.2-internal, Eclipse OpenJ9 VM, master-5dd23af84
+        # VM options:   -Xshareclasses
+                        -Xaggressive
+                        -Xjit:enableJITServerHeuristics
+                        -Xjit:enableOSR
+                        -Xjit:enableExpensiveOptsAtWarm
+                        -Xjit:enableEarlyCompilationDuringIdleCpu
+                        -Xjit:enableCheapWarmOpts
+                        -Xjit:enableAOTInlineSystemMethod
+                        -Xjit:x86HLE
+                        -Xjit:enableRecompilationPushing
+        Benchmark                                                               Mode  Cnt    Score    Error  Units
+        ReflectionVsDirectInvocationBenchmark.testMethodDeclaredFullReflection  avgt    5  394.726 ± 18.615  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodDirect                  avgt    5    9.355 ±  0.023  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodFullReflection          avgt    5  386.583 ±  1.554  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandle            avgt    5  331.513 ±  0.799  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandleBind        avgt    5   11.409 ±  0.276  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodPartialReflection       avgt    5  174.455 ± 62.027  ns/op
+
+
+        # JMH version: 1.21
+        # VM version: JDK 12.0.2-internal, Eclipse OpenJ9 VM, master-5dd23af84
+        # VM options:   -Xshareclasses
+                        -Xjit:enableJITServerHeuristics
+                        -Xjit:enableOSR
+                        -Xjit:enableExpensiveOptsAtWarm
+                        -Xjit:enableEarlyCompilationDuringIdleCpu
+                        -Xjit:enableCheapWarmOpts
+                        -Xjit:enableAOTInlineSystemMethod
+                        -Xjit:x86HLE
+                        -Xjit:enableRecompilationPushing
+
+        Benchmark                                                               Mode  Cnt    Score    Error  Units
+        ReflectionVsDirectInvocationBenchmark.testMethodDeclaredFullReflection  avgt    5  420.185 ± 32.827  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodDirect                  avgt    5    9.387 ±  0.014  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodFullReflection          avgt    5  419.222 ± 16.032  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandle            avgt    5  325.031 ±  3.315  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodMethodHandleBind        avgt    5   11.400 ±  0.432  ns/op
+        ReflectionVsDirectInvocationBenchmark.testMethodPartialReflection       avgt    5  167.134 ± 48.873  ns/op
      */
     public static void main(String[] args) throws Exception {
         Options opt = new OptionsBuilder()
