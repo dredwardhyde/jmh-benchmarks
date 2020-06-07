@@ -204,7 +204,7 @@ import java.util.concurrent.TimeUnit;
 
  */
 @State(Scope.Benchmark)
-public class VolatileTest {
+public class VolatileBenchmark {
 
     public static final Random random = new Random();
 
@@ -214,11 +214,11 @@ public class VolatileTest {
     public int rand3;
     public volatile int rand4;
 
-    public static final VolatileTest volatileTest = new VolatileTest();
+    public static final VolatileBenchmark volatileTest = new VolatileBenchmark();
 
     public static void main(String[] args) throws Exception {
         Options opt = new OptionsBuilder()
-                .include(VolatileTest.class.getSimpleName())
+                .include(VolatileBenchmark.class.getSimpleName())
                 .forks(1)
                 .build();
         new Runner(opt).run();
