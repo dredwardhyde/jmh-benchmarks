@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
     # JMH version: 1.21
     # VM version: JDK 11.0.6, OpenJDK 64-Bit Server VM, 11.0.6+10-LTS
     # VM invoker: C:\Program Files\Zulu\zulu-11\bin\java.exe
-    # VM options: -javaagent:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\lib\idea_rt.jar=60920:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\bin -Dfile.encoding=UTF-8 --module-path=C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\target\classes;C:\Users\edwardhyde\.m2\repository\org\openjdk\jmh\jmh-core\1.21\jmh-core-1.21.jar;C:\Users\edwardhyde\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\edwardhyde\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\unnamed.jar -Djdk.module.main=benchmarks
+    # VM options: -javaagent:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\lib\idea_rt.jar=60920:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\bin -Dfile.encoding=UTF-8 --module-path=C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\target\classes;C:\Users\edwardhyde\.m2\repository\org\openjdk\jmh\jmh-core\1.21\jmh-core-1.21.jar;C:\Users\edwardhyde\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\edwardhyde\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\\unnamed.jar -Djdk.module.main=benchmarks
     # Warmup: 5 iterations, 20000 ms each
     # Measurement: 5 iterations, 20000 ms each
     # Timeout: 10 min per iteration
@@ -57,7 +57,7 @@ import java.util.concurrent.TimeUnit;
     # JMH version: 1.21
     # VM version: JDK 11.0.6, OpenJDK 64-Bit Server VM, 11.0.6+10-LTS
     # VM invoker: C:\Program Files\Zulu\zulu-11\bin\java.exe
-    # VM options: -javaagent:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\lib\idea_rt.jar=60920:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\bin -Dfile.encoding=UTF-8 --module-path=C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\target\classes;C:\Users\edwardhyde\.m2\repository\org\openjdk\jmh\jmh-core\1.21\jmh-core-1.21.jar;C:\Users\edwardhyde\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\edwardhyde\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\unnamed.jar -Djdk.module.main=benchmarks
+    # VM options: -javaagent:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\lib\idea_rt.jar=60920:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\bin -Dfile.encoding=UTF-8 --module-path=C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\target\classes;C:\Users\edwardhyde\.m2\repository\org\openjdk\jmh\jmh-core\1.21\jmh-core-1.21.jar;C:\Users\edwardhyde\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\edwardhyde\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\\unnamed.jar -Djdk.module.main=benchmarks
     # Warmup: 5 iterations, 20000 ms each
     # Measurement: 5 iterations, 20000 ms each
     # Timeout: 10 min per iteration
@@ -101,7 +101,7 @@ import java.util.concurrent.TimeUnit;
     # JMH version: 1.21
     # VM version: JDK 11.0.6, OpenJDK 64-Bit Server VM, 11.0.6+10-LTS
     # VM invoker: C:\Program Files\Zulu\zulu-11\bin\java.exe
-    # VM options: -javaagent:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\lib\idea_rt.jar=60920:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\bin -Dfile.encoding=UTF-8 --module-path=C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\target\classes;C:\Users\edwardhyde\.m2\repository\org\openjdk\jmh\jmh-core\1.21\jmh-core-1.21.jar;C:\Users\edwardhyde\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\edwardhyde\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\unnamed.jar -Djdk.module.main=benchmarks
+    # VM options: -javaagent:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\lib\idea_rt.jar=60920:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\bin -Dfile.encoding=UTF-8 --module-path=C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\target\classes;C:\Users\edwardhyde\.m2\repository\org\openjdk\jmh\jmh-core\1.21\jmh-core-1.21.jar;C:\Users\edwardhyde\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\edwardhyde\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\\unnamed.jar -Djdk.module.main=benchmarks
     # Warmup: 5 iterations, 20000 ms each
     # Measurement: 5 iterations, 20000 ms each
     # Timeout: 10 min per iteration
@@ -145,7 +145,7 @@ import java.util.concurrent.TimeUnit;
     # JMH version: 1.21
     # VM version: JDK 11.0.6, OpenJDK 64-Bit Server VM, 11.0.6+10-LTS
     # VM invoker: C:\Program Files\Zulu\zulu-11\bin\java.exe
-    # VM options: -javaagent:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\lib\idea_rt.jar=60920:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\bin -Dfile.encoding=UTF-8 --module-path=C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\target\classes;C:\Users\edwardhyde\.m2\repository\org\openjdk\jmh\jmh-core\1.21\jmh-core-1.21.jar;C:\Users\edwardhyde\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\edwardhyde\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\unnamed.jar -Djdk.module.main=benchmarks
+    # VM options: -javaagent:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\lib\idea_rt.jar=60920:C:\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\bin -Dfile.encoding=UTF-8 --module-path=C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\target\classes;C:\Users\edwardhyde\.m2\repository\org\openjdk\jmh\jmh-core\1.21\jmh-core-1.21.jar;C:\Users\edwardhyde\.m2\repository\net\sf\jopt-simple\jopt-simple\4.6\jopt-simple-4.6.jar;C:\Users\edwardhyde\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\edwardhyde\IdeaProjects\jmh-benchmarks\\unnamed.jar -Djdk.module.main=benchmarks
     # Warmup: 5 iterations, 20000 ms each
     # Measurement: 5 iterations, 20000 ms each
     # Timeout: 10 min per iteration
